@@ -3,6 +3,7 @@ import { Route, Routes, BrowserRouter, useLocation } from "react-router-dom";
 import Index from "./ui/pages/index";
 import Blog from "./ui/pages/blog";
 import Item from "./ui/pages/blog/item";
+import Page404 from "./ui/pages/404";
 
 import { ThemeProvider } from "@mui/material/styles";
 import theme from './ui/theme/theme';
@@ -24,15 +25,18 @@ function App() {
     <div>
       <ThemeProvider theme={theme} >
         <BrowserRouter>
-          <Routes>
-            <Route path="/">
-              <Route index element={<Index />} />
-              <Route path="blog">
-                <Route index element={<Blog />} />
-                <Route path="item" element={<Item />} />
+          <Wrapper>
+            <Routes>
+              <Route path="/">
+                <Route index element={<Index />} />
+                <Route path="blog">
+                  <Route index element={<Blog />} />
+                  <Route path="item" element={<Item />} />
+                </Route>
               </Route>
-            </Route>
-          </Routes>
+              <Route path="*" element={<Page404 />} />
+            </Routes>
+          </Wrapper>
         </BrowserRouter>
       </ThemeProvider>
     </div>
