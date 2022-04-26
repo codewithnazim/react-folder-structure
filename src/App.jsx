@@ -1,14 +1,11 @@
 import { Route, Routes, BrowserRouter, useLocation } from "react-router-dom";
-
 import Index from "./ui/pages/index";
-import Blog from "./ui/pages/blog";
-import Item from "./ui/pages/blog/item";
 import Page404 from "./ui/pages/404";
-
 import { ThemeProvider } from "@mui/material/styles";
 import theme from './ui/theme/theme';
-
 import { useLayoutEffect } from 'react'
+import { Navbar } from "./components/header";
+import { Footer } from "./components/footer";
 
 // scroll to top
 const Wrapper = ({ children }) => {
@@ -26,17 +23,15 @@ function App() {
       <ThemeProvider theme={theme} >
         <BrowserRouter>
           <Wrapper>
+            <Navbar />
             <Routes>
               <Route path="/">
-                <Route index element={<Index />} />
-                <Route path="blog">
-                  <Route index element={<Blog />} />
-                  <Route path="item" element={<Item />} />
-                </Route>
+                {/* <Route index element={<Index />} /> */}
               </Route>
-              <Route path="*" element={<Page404 />} />
             </Routes>
+            <Footer />
           </Wrapper>
+
         </BrowserRouter>
       </ThemeProvider>
     </div>
