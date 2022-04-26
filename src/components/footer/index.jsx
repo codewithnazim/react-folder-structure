@@ -14,7 +14,7 @@ export const Footer = () => {
   return (
     <Box sx={{ bgcolor: '#1E5DBB14', display: 'flex', alignItems: 'center', padding: '100px 10px', justifyContent:'center' }} >
       <Container fixed>
-        <Grid container spacing={2} marginX='auto' sx={{ display: 'flex', alignItems: 'flex-start', justifyContent:'center',  }}>
+        <Grid container marginX='auto' sx={{ display: 'flex', alignItems: 'flex-start', justifyContent:'center'}}>
           <Grid item xs={12} sm={12} md={3} lg={3} >
             <img src={require("../../ui/assets/footer/Mask group (2).png").default} alt="" />
           </Grid>
@@ -22,7 +22,7 @@ export const Footer = () => {
             <Typography variant='h5'>
               Links
             </Typography>
-            <Stack marginTop={2} spacing={1} >
+            <Stack marginTop={2}  sx={{gap:'10px'}} >
               {data1.map((item, index) =>
                 <Typography key={index} variant='body1' color='#00000'>
                   {item.title}
@@ -34,7 +34,7 @@ export const Footer = () => {
             <Typography variant='h5'>
               Services
             </Typography>
-            <Stack marginTop={2} spacing={1}>
+            <Stack marginTop={2}  sx={{gap:'10px'}}>
               {data2.map((item, index) =>
                 <Typography key={index} variant='body1' color='#00000'>
                   {item.title}
@@ -46,7 +46,7 @@ export const Footer = () => {
             <Typography variant='h5'>
               Connect
             </Typography>
-            <Stack marginTop={2} spacing={2}>
+            <Stack marginTop={2} >
               <Box sx={{display:'flex', flexDirection:'column', gap:'10px' }}>
               <Typography variant='h6'>
                 Email - support@hospital.com
