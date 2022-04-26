@@ -7,9 +7,9 @@ export const Banner = () => {
         <Box className='banner' mt='10px'>
             <Container fixed padding="100px auto">
                 <Grid container >
-                    <Grid item lg={3} bgcolor='red'>
+                    <Grid item lg={3} >
                         <Box>
-                            <img src={require("../../../src/ui/assets/banner/beautiful-female-doctor-white-coat-standing-arms-crossed-white-wall 1 (1).png").default} alt="" style={{ width: '100%' }} />
+                            <img src={require("../../ui/assets/banner/beautiful-female-doctor-white-coat-standing-arms-crossed-white-wall 1 (1).png")} alt="" style={{ width: '100%' }} />
                         </Box>
                     </Grid>
                     <Grid item lg={6}>

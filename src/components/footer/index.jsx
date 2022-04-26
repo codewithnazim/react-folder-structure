@@ -16,7 +16,7 @@ export const Footer = () => {
       <Container fixed>
         <Grid container spacing={2} marginX='auto' sx={{ display: 'flex', alignItems: 'flex-start', justifyContent:'center',  }}>
           <Grid item xs={12} sm={12} md={3} lg={3} >
-            <img src={require("../../../src/ui/assets/footer/Mask group (2).png").default} alt="" />
+            <img src={require("../../ui/assets/footer/Mask group (2).png").default} alt="" />
           </Grid>
           <Grid item xs={6} sm={4} md={2} lg={3} >
             <Typography variant='h5'>
