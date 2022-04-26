@@ -8,5 +8,10 @@ body{
 }
 
 .banner {
-  background-image: url();
+  /* background-image: url("./ui/assets/Group 33.svg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
+
