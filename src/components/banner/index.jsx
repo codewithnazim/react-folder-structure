@@ -1,29 +1,17 @@
-import { Box, Container, Grid, Stack, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography, Button } from '@mui/material'
 import React from 'react'
-import { makeStyles } from "@mui/styles";
+import useStyles from './style';
+import {Section1} from './section1';
+import {Section2} from './section2';
 
 export const Banner = () => {
+    const classes = useStyles();
     return (
-        <Box className='banner' mt='10px'>
-            <Container fixed padding="100px auto">
-                <Grid container >
-                    <Grid item lg={3} >
-                        <Box>
-                            <img src={require("../../ui/assets/banner/beautiful-female-doctor-white-coat-standing-arms-crossed-white-wall 1 (1).png")} alt="" style={{ width: '100%' }} />
-                        </Box>
-                    </Grid>
-                    <Grid item lg={6}>
-                    </Grid>
-                </Grid>
+        <Box className='banner' >
+            <Container fixed >
+               <Section1 />
+               <Section2 />
             </Container>
-        </Box>
-    )
-}
-
-const data= () => {
-    return (
-        <Box>
-            
         </Box>
     )
 }

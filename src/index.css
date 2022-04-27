@@ -8,10 +8,15 @@ body{
 }
 
 .banner {
-  /* background-image: url("./ui/assets/Group 33.svg"); */
-  background-position: center;
+  /* background-image: url("./ui/assets/banner/Group 33.png"); */
+  background-position: flex-start;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 107.5vh;
+}
+
+.services {
+  background-color: #1E5DBB;
+  background-image: url('./ui/assets/services/Group 33 (3).png');
 }
 

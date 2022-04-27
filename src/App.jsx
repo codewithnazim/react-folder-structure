@@ -2,9 +2,9 @@ import { Route, Routes, BrowserRouter, useLocation } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from './ui/theme/theme';
 import { useLayoutEffect } from 'react'
-import { Navbar } from "./components/header";
 import { Footer } from "./components/footer";
 import { Index } from "./components/home";
+import { Navbar } from './components/header'
 
 // scroll to top
 const Wrapper = ({ children }) => {

@@ -8,12 +8,12 @@ const defaultTheme = createTheme({
             default: "#E5E5E5"
         },
         primary: {
-            main: "#000000",
-            dark: "#050405",
+            main: "#1E5DBB",
+            dark: "#ffffff",
         },
         secondary: {
-            main: "#000000",
-            light: "#050405",
+            main: "#1E5DBB",
+            dark: "#ffffff",
         },
     },
     breakpoints: {
@@ -69,7 +69,7 @@ const theme = {
                 h4: {
                     fontFamily: "Work Sans",
                     fontStyle: "normal",
-                    fontWeight: 600,
+                    fontWeight: 400,
                     fontSize: "20px",
                     lineHeight: "24px",
                     [defaultTheme.breakpoints.down(1200)]: {
@@ -79,7 +79,7 @@ const theme = {
                 h5: {
                     fontFamily: "Work Sans",
                     fontStyle: "normal",
-                    fontWeight: 500,
+                    fontWeight: 600,
                     fontSize: "18px",
                     lineHeight: "24px",
                     [defaultTheme.breakpoints.down(1200)]: {

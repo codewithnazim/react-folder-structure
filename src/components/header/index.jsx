@@ -22,14 +22,13 @@ export const Navbar = () => {
   const classes = useStyles();
 
   return (
-    <AppBar position='static' color='transparent' sx={{ boxShadow: '0',}}>
+    <AppBar position='fixed' color='transparent'  sx={{ boxShadow: '0',}}>
       <Toolbar variant='dense'
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
           mx: '50px',
-          padding:'20px'
         }}>
         <img src={require("../../../src/ui/assets/header/Mask group.svg").default} alt="" />
         <Box flexDirection='row' sx={{ justifyContent: 'center', alignItems: 'center', display: { xs: 'none', lg: 'block' } }}
