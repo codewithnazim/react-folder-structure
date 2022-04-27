@@ -33,7 +33,7 @@ export const Navbar = () => {
   const classes = useStyles();
 
   return (
-    <AppBar position='fixed' color='transparent'  sx={{ boxShadow: '0',}}>
+    <AppBar position='fixed' color='transparent'  sx={{ boxShadow: '0', padding:'10px'}}>
       <Toolbar variant='dense'
         sx={{
           display: 'flex',
