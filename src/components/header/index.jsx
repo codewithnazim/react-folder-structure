@@ -13,6 +13,17 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     marginLeft: "30px",
     cursor: 'pointer'
+  },
+  nav1: {
+    fontFamily: "Work Sans",
+    fontStyle: "normal",
+    fontWeight: 500,
+    color:'#1E5DBB',
+    fontSize: "15px",
+    lineHeight: "17.6px",
+    textDecoration: 'none',
+    marginLeft: "30px",
+    cursor: 'pointer'
   }
 }))
 
@@ -33,6 +44,9 @@ export const Navbar = () => {
         <img src={require("../../../src/ui/assets/header/Mask group.svg").default} alt="" />
         <Box flexDirection='row' sx={{ justifyContent: 'center', alignItems: 'center', display: { xs: 'none', lg: 'block' } }}
         >
+          <NavLink to='#' className={classes.nav1}>
+            Home
+          </NavLink>
           {data.map((item, index) =>
             <NavLink key={index} to={item.link} className={classes.nav}
             >
@@ -46,10 +60,6 @@ export const Navbar = () => {
 }
 
 const data = [
-  {
-    title: "Home",
-    link: "#"
-  },
   {
     title: "About Us",
     link: "#"
