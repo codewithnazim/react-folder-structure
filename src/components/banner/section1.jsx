@@ -6,10 +6,9 @@ export const Section1 = () => {
     const classes = useStyles();
     return (
         <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
-            <Grid item lg={6} >
-                <Box width='50%'>
-                    <img src={require("../../ui/assets/banner/beautiful-female-doctor-white-coat-standing-arms-crossed-white-wall 1 (1).png")} alt="" style={{ width: '100%' }} />
-                </Box>
+            <Grid item lg={6} sx={{display:'flex', justifyContent:'center'}}>
+                    <img src={require("../../ui/assets/banner/beautiful-female-doctor-white-coat-standing-arms-crossed-white-wall 1 (1).png")} alt="" style={{width:'300px', height:'500px' }} />
+                
             </Grid>
             <Grid item lg={6} sx={{ display: 'flex', gap: '30px', flexDirection: 'column' }}>
                 <Box>

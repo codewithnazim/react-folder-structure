@@ -11,12 +11,12 @@ export const About = () => {
             </Typography>
             <Grid container mt='10px' spacing={5}>
                 <Grid item lg={6} >
-                    <Box >
+                    <Box>
                         <img src={require("../../ui/assets/about/Group 33 (1).png")} alt="" style={{ width: '100%' }} />
                     </Box>
                 </Grid>
                 <Grid item lg={6} sx={{display:'flex', gap:'10px', flexDirection:'column'}}>
-                    <Typography variant='h2' width='70%'>
+                    <Typography variant='h2' width='80%'>
                         Short Story About Our Hospital
                     </Typography>
                     <Typography variant='body1' width='80%'>

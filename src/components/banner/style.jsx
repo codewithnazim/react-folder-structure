@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         margin:'30px',
         height:'274px',
-        width:'380px'
+        width:'380px',
     },
     cardbg: {
         display: 'flex',

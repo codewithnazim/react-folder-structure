@@ -6,8 +6,8 @@ export const Section2 = () => {
     const classes = useStyles();
     return (
         <Grid container sx={{ boxShadow: '10px solid gray' }} >
-            <Grid item lg={4} className={classes.card} >
-                <Box className={classes.cardbg}>
+            <Grid item lg={4} className={classes.card} sx={{borderRight:'1px solid #05040585'}} >
+                <Box className={classes.cardbg} >
                     <Typography variant='h5'>
                         Emergency Cases
                     </Typography>
@@ -19,8 +19,8 @@ export const Section2 = () => {
                     </Typography>
                 </Box>
             </Grid>
-            <Grid item lg={4} className={classes.card}>
-                <Box className={classes.cardbg}>
+            <Grid item lg={4} className={classes.card} sx={{borderRight:'1px solid #05040585'}}>
+                <Box className={classes.cardbg} >
                     <Typography variant='h5'>
                         Location
                     </Typography>
