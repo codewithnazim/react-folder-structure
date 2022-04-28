@@ -1,13 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
-    cardback: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection:'row',
-        margin:'30px'
-    },
     card: {
         width: '270px',
         height: '121px',
@@ -16,11 +9,9 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        margin:'10px'
     },
     cardbg: {
         display: 'flex',
-        alignItems: 'flex-start',
         justifyContent: 'center',
         flexDirection: 'column',
         margin: '20px',

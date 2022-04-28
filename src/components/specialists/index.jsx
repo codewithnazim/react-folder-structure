@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography } from '@mui/material'
+import { Box, Button, Container, Typography, Grid } from '@mui/material'
 import React from 'react'
 import Slider from "react-slick";
 import useStyles from './style';
@@ -7,9 +7,9 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 export const Specialists = () => {
     const classes = useStyles()
     return (
-        <>
-            <Container fixed sx={{ padding: "100px" }}>
-                <Box display='flex' justifyContent='space-between'>
+      <Box sx={{ dispaly: 'flex', flexDirection: 'column', marginY:{xs:'50px', md:'100px'} }}>
+            <Container fixed sx={{ padding: { xs: '50px auto', md: "100px auto" }, }}>
+                <Box display='flex' justifyContent='space-between' >
                     <Typography variant='h2'>
                         Critical Care Specialists
                     </Typography>
@@ -18,10 +18,10 @@ export const Specialists = () => {
                         <ArrowForwardIosIcon />
                     </Button>
                 </Box>
-                <Box className={classes.cardback} >
+                <Grid container >
                     {data.map((item, index) =>
-                        <Box key={index} className={classes.card}>
-                            <Box className={classes.cardbg}>
+                        <Grid item xs={12} sm={4} md={5}  key={index} className={classes.card} sx={{margin:'10px'}}>
+                            <Box className={classes.cardbg} >
                                 <Typography variant='h5'>
                                     {item.title}
                                 </Typography>
@@ -29,11 +29,11 @@ export const Specialists = () => {
                                     {item.subtitle}
                                 </Typography>
                             </Box>
-                        </Box>
+                        </Grid>
                     )}
-                </Box>
+                </Grid>
             </Container>
-        </>
+        </Box>
     )
 }
 

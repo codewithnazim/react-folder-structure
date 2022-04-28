@@ -1,6 +1,7 @@
 import { AppBar, Box, Toolbar } from '@mui/material'
 import { NavLink } from 'react-router-dom'
 import { makeStyles } from "@mui/styles";
+import { MobileMenuBar } from './mblnav';
 
 const useStyles = makeStyles((theme) => ({
   nav: {
@@ -23,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: "17.6px",
     textDecoration: 'none',
     marginLeft: "30px",
-    cursor: 'pointer'
+    cursor: 'pointer',
+    marginRight:'10px'
   }
 }))
 
@@ -33,16 +35,15 @@ export const Navbar = () => {
   const classes = useStyles();
 
   return (
-    <AppBar position='fixed' color='transparent'  sx={{ boxShadow: '0', padding:'10px'}}>
+    <AppBar position='fixed' color='transparent'  sx={{ boxShadow: '0', padding:'10px auto'}}>
       <Toolbar variant='dense'
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-          alignItems: 'center',
-          mx: '50px',
+          alignItems: 'center'
         }}>
         <img src={require("../../../src/ui/assets/header/Mask group.svg").default} alt="" />
-        <Box flexDirection='row' sx={{ justifyContent: 'center', alignItems: 'center', display: { xs: 'none', lg: 'block' } }}
+        <Box flexDirection='row' sx={{ justifyContent: 'center', alignItems: 'center', display: { xs: 'none', md: 'block' } }}
         >
           <NavLink to='#' className={classes.nav1}>
             Home
@@ -54,6 +55,7 @@ export const Navbar = () => {
             </NavLink>
           )}
         </Box>
+        <MobileMenuBar />
       </Toolbar>
     </AppBar>
   )

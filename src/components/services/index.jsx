@@ -4,14 +4,18 @@ import Slider from "react-slick";
 
 export const Services = () => {
     return (
-        <Box className='services' >
-            <Container fixed sx={{ padding: "100px" }}>
+        <Box className='services' sx={{ display: 'flex', flexDirection: 'column', marginY:{xs:'50px', md:'100px'}, justifyContent:'center', alignItems:'center' }}>
+            <Container fixed sx={{ padding: { xs: '50px auto', md: "100px auto" }, display: 'flex', flexDirection: 'column', marginY:{xs:'50px', md:'100px'}, justifyContent:'center' }}>
+                <Box display='flex'>
                 <Typography variant='h2' color='#fff'>
                     Services
                 </Typography>
-                <Grid container >
+                </Box>
+                <Grid container mt='50px'>
                     {data.map((item, index) =>
-                        <Grid item xs={12} sm={5} md={4} lg={3}  key={index}  sx={{ display: 'flex', justifyContent: 'flex-start', borderRadius: '10px', padding:'5px' , alignItems: 'center', margin: '10px', bgcolor:'#fff' }}>
+                        <Grid key={index} item  sm={5} md={4} lg={3}  >
+                            <Box   sx={{ display: 'flex',borderRadius: '10px', padding:'5px' , alignItems: 'center', margin: '10px', bgcolor:'#fff' }}>
+
                             <Box margin='20px' sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                                 <Box bgcolor='#1E5DBB' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '10px', width: '52px', height: '52px', flexDirection: 'column' }} >
                                     {item.img}
@@ -22,6 +26,7 @@ export const Services = () => {
                                 <Typography variant='h6' width='100%'>
                                     {item.subtitle}
                                 </Typography>
+                            </Box>
                             </Box>
                         </Grid>
                     )}

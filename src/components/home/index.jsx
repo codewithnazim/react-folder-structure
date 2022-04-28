@@ -1,3 +1,4 @@
+import { Box } from '@mui/material'
 import React from 'react'
 import { About } from '../about'
 import { Banner } from '../banner'
@@ -7,11 +8,11 @@ import { Specialists } from '../specialists'
 
 export const Index = () => {
   return (
-    < >
+    <>
         <Banner />
         <About />
         <Services />
-        {/* <Specialists /> */}
+        <Specialists />
     </>
   )
 }

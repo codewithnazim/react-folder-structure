@@ -7,22 +7,20 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         margin:'30px',
-        height:'274px',
-        width:'380px',
     },
     cardbg: {
         display: 'flex',
         alignItems: 'flex-start',
         justifyContent: 'center',
         flexDirection: 'column',
-        margin: '40px',
+        margin: '20px',
         gap:'10px'
     },
-    btn: {
+    btn: { 
         cursor: 'pointer',
-        padding:'5px 10px', 
         gap:'10px', 
       }
+      
 }))
 
 export default useStyles

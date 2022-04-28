@@ -12,11 +12,14 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  max-height: max-content;
 }
 
 .services {
   background-color: #1E5DBB;
   background-image: url('./ui/assets/services/Group 33 (3).png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
