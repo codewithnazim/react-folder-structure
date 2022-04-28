@@ -87,7 +87,7 @@ const theme = {
                     fontSize: "18px",
                     lineHeight: "24px",
                     [defaultTheme.breakpoints.down(1200)]: {
-                        fontSize: "10px",
+                        fontSize: "16px",
                         lineHeight: "20px",
                     },
                 },
