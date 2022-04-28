@@ -7,8 +7,8 @@ import {Section2} from './section2';
 export const Banner = () => {
     const classes = useStyles();
     return (
-        <Box className='banner' sx={{padding:'100px'}} >
-            <Container fixed  >
+        <Box className='banner'  >
+            <Container fixed sx={{padding:'100px auto', display:'flex', justifyContent:'center', flexDirection:'column', alignItems:'center',}} >
                <Section1 />
                <Section2 />
             </Container>

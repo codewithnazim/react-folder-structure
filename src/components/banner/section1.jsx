@@ -5,14 +5,14 @@ import useStyles from './style';
 export const Section1 = () => {
     const classes = useStyles();
     return (
-        <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
-            <Grid item lg={6} sx={{display:'flex', justifyContent:'center'}}>
-                    <img src={require("../../ui/assets/banner/beautiful-female-doctor-white-coat-standing-arms-crossed-white-wall 1 (1).png")} alt="" style={{width:'300px', height:'500px' }} />
+        <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt:'50px' }} >
+            <Grid item md={5} lg={5} sx={{display:'flex', justifyContent:'center'}}>
+                    <img src={require("../../ui/assets/banner/beautiful-female-doctor-white-coat-standing-arms-crossed-white-wall 1 (1).png")} alt="" style={{width:'50%' }} />
                 
             </Grid>
-            <Grid item lg={6} sx={{ display: 'flex', gap: '30px', flexDirection: 'column' }}>
+            <Grid item xs={12} md={5} lg={7} sx={{ display:{xs:'block' ,sm:'flex'}, gap: '30px', flexDirection: 'column' }}>
                 <Box>
-                    <Box sx={{ display: 'flex', gap: '20px' }}>
+                    <Box sx={{ display:{xs:'block' ,sm:'flex'}, gap: '20px' }}>
                         <Typography variant='h1' color='blue'>
                             Protect
                         </Typography>
@@ -25,7 +25,7 @@ export const Section1 = () => {
                             and take care
                         </Typography>
                     </Box>
-                    <Box sx={{ display: 'flex', gap: '20px' }}>
+                    <Box sx={{ display:{xs:'block' ,sm:'flex'}, gap: '20px' }}>
                         <Typography variant='h1' >
                             of your
                         </Typography>

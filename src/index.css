@@ -8,8 +8,8 @@ body{
 }
 
 .banner {
-  /* background-image: url("./ui/assets/banner/Group 33.png"); */
-  background-position: flex-start;
+  background-image: url("./ui/assets/banner/background.jpeg"); 
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;

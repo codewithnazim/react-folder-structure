@@ -6,7 +6,7 @@ export const Section2 = () => {
     const classes = useStyles();
     return (
         <Grid container sx={{ boxShadow: '10px solid gray' }} >
-            <Grid item lg={4} className={classes.card}  >
+            <Grid item xs={12} sm={6} md={4}  className={classes.card}  >
                 <Box className={classes.cardbg} >
                     <Typography variant='h5'>
                         Emergency Cases
@@ -18,9 +18,9 @@ export const Section2 = () => {
                         +91 (731) 253-41-24
                     </Typography>
                 </Box>
-            <Box sx={{borderRight:'1px solid #05040585', height:'70%'}} />
+            <Box sx={{borderRight:'1px solid #05040585', height:'70%', display: { xs: 'none', lg: 'block'}, }} />
             </Grid>
-            <Grid item lg={4} className={classes.card} >
+            <Grid item xs={12} sm={6} md={4}className={classes.card} >
                 <Box className={classes.cardbg}  >
                     <Typography variant='h5'>
                         Location
@@ -32,15 +32,15 @@ export const Section2 = () => {
                         Lorem ipsum dolor sit amet, consecr adipiscing elit.
                     </Typography>
                 </Box>
-                <Box sx={{borderRight:'1px solid #05040585', height:'70%'}} />
+                <Box sx={{borderRight:'1px solid #05040585', height:'70%', display: { xs: 'none', lg: 'block' }}} />
             </Grid>
-            <Grid item lg={4} className={classes.card}>
-                <Box className={classes.cardbg}>
+            <Grid item xs={12} sm={6} md={4} className={classes.card}>
+                <Box className={classes.cardbg} >
                     <Typography variant='h5'>
                         Opening Hours
                     </Typography>
                     {data.map((item, index) =>
-                        <Box key={index} sx={{ display: 'flex', justifyContent: 'space-between', gap: '40px', width:'100%' }}>
+                        <Box key={index} sx={{ display: 'flex', justifyContent: 'space-between', gap:'4px', width:'100%' }}>
                             <Typography variant='body2'>
                                 {item.day}
                             </Typography>

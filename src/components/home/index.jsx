@@ -11,7 +11,7 @@ export const Index = () => {
         <Banner />
         <About />
         <Services />
-        <Specialists />
+        {/* <Specialists /> */}
     </>
   )
 }

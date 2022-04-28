@@ -43,7 +43,8 @@ const theme = {
                     fontSize: "58px",
                     lineHeight: "68.03px",
                     [defaultTheme.breakpoints.down(1200)]: {
-                        
+                        fontSize: "35px",
+                        lineHeight: "40px",
                     },
                 },
                 h2: {
@@ -53,7 +54,8 @@ const theme = {
                     fontSize: "38px",
                     lineHeight: "44.57px",
                     [defaultTheme.breakpoints.down(1200)]: {
-                        
+                        fontSize: "30px",
+                        lineHeight: "35px",
                     },
                 },
                 h3: {
@@ -63,7 +65,6 @@ const theme = {
                     fontSize: "18px",
                     lineHeight: "24px",
                     [defaultTheme.breakpoints.down(1200)]: {
-                        
                     },
                 },
                 h4: {
@@ -73,7 +74,7 @@ const theme = {
                     fontSize: "20px",
                     lineHeight: "24px",
                     [defaultTheme.breakpoints.down(1200)]: {
-                        
+                        fontSize: "16px",
                     },
                 },
                 h5: {
@@ -83,7 +84,7 @@ const theme = {
                     fontSize: "18px",
                     lineHeight: "24px",
                     [defaultTheme.breakpoints.down(1200)]: {
-                        
+                        fontSize: "16px",
                     },
                 },
                 h6: {
@@ -92,9 +93,6 @@ const theme = {
                     fontWeight: 500,
                     fontSize: "16px",
                     lineHeight: "18.77px",
-                    [defaultTheme.breakpoints.down(1200)]: {
-                        
-                    },
                 },
                 body1: {
                     fontFamily: "Work Sans",
@@ -102,9 +100,6 @@ const theme = {
                     fontWeight: 500,
                     fontSize: "15px",
                     lineHeight: "17.6px",
-                    [defaultTheme.breakpoints.down(1200)]: {
-                        
-                    },
                 },
                 body2: {
                     fontFamily: "Work Sans",
@@ -113,7 +108,7 @@ const theme = {
                     fontSize: "16px",
                     lineHeight: "24px",
                     [defaultTheme.breakpoints.down(1200)]: {
-                        
+                        fontSize: "12px",
                     },
                 },
             },
