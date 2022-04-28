@@ -6,15 +6,13 @@
 body{
   font-family:Poppins ;
 }
-
-.banner {
-  background-image: url("./ui/assets/banner/background.jpeg"); 
+.home_banner{
+  background-image: url('./ui/assets/banner/background.jpeg');
+  width: 100%;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  max-height: max-content;
+  height: max-content;
 }
-
 .services {
   background-color: #1E5DBB;
   background-image: url('./ui/assets/services/Group 33 (3).png');
@@ -22,4 +20,5 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 

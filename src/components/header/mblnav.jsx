@@ -27,7 +27,7 @@ export const MobileMenuBar = () => {
         }}
         PaperProps={{
           sx: {
-            background: "rgba( 19, 11, 70, 0.25 )",
+            background: "rgba( 0, 128, 255)",
             boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
             backdropFilter: "blur( 4px )",
             WebkitBackdropFilter: "blur( 4px )",
@@ -36,6 +36,7 @@ export const MobileMenuBar = () => {
             textAlign: 'center',
             gap: '10px',
             marginX: "auto",
+            padding:'20px',
             alignItems: 'center',
           }
         }}
